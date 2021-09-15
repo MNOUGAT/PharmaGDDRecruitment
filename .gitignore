@@ -50,3 +50,12 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+.env.local.php
+.idea
+node_modules
+
+public/media
+public/bundles
+public/assets
+
