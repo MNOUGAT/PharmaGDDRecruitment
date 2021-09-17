@@ -3911,16 +3911,16 @@
         },
         {
             "name": "lexik/jwt-authentication-bundle",
-            "version": "v2.12.6",
+            "version": "v2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lexik/LexikJWTAuthenticationBundle.git",
-                "reference": "f2df9f7a371a99a05e5bfe65c634a7e0cdf1c539"
+                "reference": "d3dbf97f9a2f7cead53767111234bb16b8726681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lexik/LexikJWTAuthenticationBundle/zipball/f2df9f7a371a99a05e5bfe65c634a7e0cdf1c539",
-                "reference": "f2df9f7a371a99a05e5bfe65c634a7e0cdf1c539",
+                "url": "https://api.github.com/repos/lexik/LexikJWTAuthenticationBundle/zipball/d3dbf97f9a2f7cead53767111234bb16b8726681",
+                "reference": "d3dbf97f9a2f7cead53767111234bb16b8726681",
                 "shasum": ""
             },
             "require": {
@@ -4006,7 +4006,7 @@
             ],
             "support": {
                 "issues": "https://github.com/lexik/LexikJWTAuthenticationBundle/issues",
-                "source": "https://github.com/lexik/LexikJWTAuthenticationBundle/tree/v2.12.6"
+                "source": "https://github.com/lexik/LexikJWTAuthenticationBundle/tree/v2.13.0"
             },
             "funding": [
                 {
@@ -4018,7 +4018,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-29T11:25:22+00:00"
+            "time": "2021-09-15T16:40:37+00:00"
         },
         {
             "name": "liip/imagine-bundle",
@@ -4241,24 +4241,24 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.3.2",
+            "version": "2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "71312564759a7db5b789296369c1a264efc43aad"
+                "reference": "437e7a1c50044b92773b361af77620efb76fff59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/71312564759a7db5b789296369c1a264efc43aad",
-                "reference": "71312564759a7db5b789296369c1a264efc43aad",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/437e7a1c50044b92773b361af77620efb76fff59",
+                "reference": "437e7a1c50044b92773b361af77620efb76fff59",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.2",
-                "psr/log": "^1.0.1"
+                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
             },
             "provide": {
-                "psr/log-implementation": "1.0.0"
+                "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
             },
             "require-dev": {
                 "aws/aws-sdk-php": "^2.4.9 || ^3.0",
@@ -4273,7 +4273,7 @@
                 "phpunit/phpunit": "^8.5",
                 "predis/predis": "^1.1",
                 "rollbar/rollbar": "^1.3",
-                "ruflin/elastica": ">=0.90 <7.0.1",
+                "ruflin/elastica": ">=0.90@dev",
                 "swiftmailer/swiftmailer": "^5.3|^6.0"
             },
             "suggest": {
@@ -4281,8 +4281,11 @@
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
                 "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-curl": "Required to send log messages using the IFTTTHandler, the LogglyHandler, the SendGridHandler, the SlackWebhookHandler or the TelegramBotHandler",
                 "ext-mbstring": "Allow to work properly with unicode symbols",
                 "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "ext-openssl": "Required to send log messages using SSL",
+                "ext-sockets": "Allow sending log messages to a Syslog server (via UDP driver)",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
                 "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
                 "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
@@ -4321,7 +4324,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.3.2"
+                "source": "https://github.com/Seldaek/monolog/tree/2.3.4"
             },
             "funding": [
                 {
@@ -4333,7 +4336,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-23T07:42:52+00:00"
+            "time": "2021-09-15T11:27:21+00:00"
         },
         {
             "name": "namshi/jose",
@@ -16962,7 +16965,6 @@
                     "type": "github"
                 }
             ],
-            "abandoned": true,
             "time": "2020-11-30T07:30:19+00:00"
         },
         {
@@ -17247,16 +17249,16 @@
         },
         {
             "name": "sylius-labs/coding-standard",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SyliusLabs/CodingStandard.git",
-                "reference": "8c5256067918dd60e7c6f953db811e98caa09c24"
+                "reference": "50b55dc880adc65dfd26e173c6ff51875598cad4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SyliusLabs/CodingStandard/zipball/8c5256067918dd60e7c6f953db811e98caa09c24",
-                "reference": "8c5256067918dd60e7c6f953db811e98caa09c24",
+                "url": "https://api.github.com/repos/SyliusLabs/CodingStandard/zipball/50b55dc880adc65dfd26e173c6ff51875598cad4",
+                "reference": "50b55dc880adc65dfd26e173c6ff51875598cad4",
                 "shasum": ""
             },
             "require": {
@@ -17287,9 +17289,9 @@
             "description": "Battle-tested coding standard configuration used in Sylius.",
             "support": {
                 "issues": "https://github.com/SyliusLabs/CodingStandard/issues",
-                "source": "https://github.com/SyliusLabs/CodingStandard/tree/v4.1.0"
+                "source": "https://github.com/SyliusLabs/CodingStandard/tree/v4.1.1"
             },
-            "time": "2021-07-27T11:38:54+00:00"
+            "time": "2021-09-16T09:55:35+00:00"
         },
         {
             "name": "symfony/browser-kit",
