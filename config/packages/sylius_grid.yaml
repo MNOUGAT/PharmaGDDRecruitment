@@ -32,4 +32,4 @@ sylius_grid:
                         type: update
                     delete:
                         type: delete
-               
+            

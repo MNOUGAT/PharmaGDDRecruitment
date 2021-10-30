@@ -257,6 +257,4 @@ sylius_grid:
                 subscribedToNewsletter:
                     label: Recherche par abonnement
                     type: boolean
-
-
-         
+ 

@@ -1,5 +1,3 @@
-
-
 app_admin_brand:
     resource: |
         alias: app.brand
@@ -10,7 +8,7 @@ app_admin_brand:
         grid: app_admin_brand
         vars:
             all:
-                subheader: app.ui.supplier # define a translation key for your entity subheader
+                subheader: app.ui.brand # define a translation key for your entity subheader
             index:
                 icon: 'file image outline' # choose an icon that will be displayed next to the subheader
     type: sylius.resource
