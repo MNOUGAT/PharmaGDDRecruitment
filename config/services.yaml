@@ -33,3 +33,9 @@ services:
     App\Controller\:
         resource: '../src/Controller'
         tags: ['controller.service_arguments']
+
+    App\Controller\BrandController:
+        arguments:
+            - '@app.repository.brand'
+        autowire: true
+        tags: ['controller.service_arguments']

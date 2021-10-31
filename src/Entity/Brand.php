@@ -12,7 +12,7 @@ use Sylius\Component\Resource\Model\ResourceInterface;
 /**
  * @ORM\Entity(repositoryClass=BrandRepository::class)
  */
-class Brand implements ResourceInterface
+class Brand implements BrandInterface
 {
     /**
      * @ORM\Id

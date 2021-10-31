@@ -1,0 +1,12 @@
+{% extends '@SyliusShop/layout.html.twig' %}
+
+{% block content %}
+<h1>produits par marque<h1>
+
+   {% for product in brand.products %}
+<pre>
+    {{ dump(product.name) }}
+</pre> 
+   {% endfor %}
+
+{% endblock %}

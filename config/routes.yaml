@@ -14,3 +14,15 @@ app_admin_brand:
     type: sylius.resource
     prefix: admin
 
+app_admin_brand_products:
+    path: /admin/brands/{id}/products
+    methods: [GET]
+    defaults:
+        _controller: App\Controller\BrandController
+        _sylius:
+            template: brand/index.html.twig
+            repository:
+                method: findProductsbyBrand
+                arguments:
+                   - "expr:service('sylius.context.brand').getBrand()"
+

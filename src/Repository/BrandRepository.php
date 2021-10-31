@@ -12,34 +12,15 @@ use Doctrine\Persistence\ManagerRegistry;
  * @method Brand[]    findAll()
  * @method Brand[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class BrandRepository extends EntityRepository
+class BrandRepository extends EntityRepository implements BrandInterfaceRepository
 {
-    // /**
-    //  * @return Brand[] Returns an array of Brand objects
-    //  */
-    /*
-    public function findByExampleField($value)
+    public function findProductsbyBrand($id): ?Brand
     {
-        return $this->createQueryBuilder('b')
-            ->andWhere('b.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('b.id', 'ASC')
-            ->setMaxResults(10)
-            ->getQuery()
-            ->getResult()
-        ;
-    }
-    */
-
-    /*
-    public function findOneBySomeField($value): ?Brand
-    {
-        return $this->createQueryBuilder('b')
-            ->andWhere('b.exampleField = :val')
-            ->setParameter('val', $value)
+        /*return $this->createQueryBuilder('b')
+            ->innerJoin('b.products', 'p', 'WHERE', 'p.brand = :brandId')
+            ->setParameter('brandId', $id)
             ->getQuery()
             ->getOneOrNullResult()
-        ;
+        ;*/
     }
-    */
 }
