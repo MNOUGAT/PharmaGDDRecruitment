@@ -32,4 +32,14 @@ sylius_grid:
                         type: update
                     delete:
                         type: delete
+                    show:
+                        type: show
+                        label: sylius.ui.show
+                        enabled: true
+                        position: 100
+                        options:
+                            link:
+                                route: app_admin_brand_products
+                                parameters:
+                                    id: resource.id
             

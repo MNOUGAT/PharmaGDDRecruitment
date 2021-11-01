@@ -1,12 +1,16 @@
-{% extends '@SyliusShop/layout.html.twig' %}
+{% extends '@SyliusAdmin/layout.html.twig' %}
+
+{% block title %}Produit {{ brand.name }}{% endblock %}
 
 {% block content %}
-<h1>produits par marque<h1>
 
-   {% for product in brand.products %}
-<pre>
+<h1>Liste des produits pour la marque {{ brand.name }}
+
+    {% for product in brand.products %}
+
+    <pre>
     {{ dump(product.name) }}
-</pre> 
-   {% endfor %}
+    </pre>
 
-{% endblock %}
+    {% endfor %}
+    {% endblock %}
