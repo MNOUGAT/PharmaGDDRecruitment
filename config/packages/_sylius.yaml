@@ -257,4 +257,25 @@ sylius_grid:
                 subscribedToNewsletter:
                     label: Recherche par abonnement
                     type: boolean
+
+winzou_state_machine:
+    brand:
+        class: "%app.model.brand.class%" # class of the domain object - in our case Order
+        states:
+            draft: ~ 
+            published: 
+            changes_required: ~  
+        transitions:
+            create:
+                from: [draft]
+                to: published
+            ask_for_changes:
+                from: [draft]
+                to: changes_required
+            submit_changes:
+                from: [changes_required]
+                to: draft
+            publish:
+                from: [published]
+                to: draft
  

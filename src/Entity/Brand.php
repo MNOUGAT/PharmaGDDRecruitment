@@ -46,6 +46,11 @@ class Brand implements BrandInterface
      */
     private $products;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $state;
+
     public function __construct()
     {
         $this->products = new ArrayCollection();
@@ -130,6 +135,18 @@ class Brand implements BrandInterface
                 $product->setBrand(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getState(): ?string
+    {
+        return $this->state;
+    }
+
+    public function setState(?string $state): self
+    {
+        $this->state = $state;
 
         return $this;
     }

@@ -42,4 +42,3 @@ sylius_grid:
                                 route: app_admin_brand_products
                                 parameters:
                                     id: resource.id
-            
