@@ -39,3 +39,18 @@ services:
             - '@app.repository.brand'
         autowire: true
         tags: ['controller.service_arguments']
+
+    app.listener.admin.menu_builder:
+        class: App\Menu\AdminMenuListener
+        tags:
+            - { name: kernel.event_listener, event: sylius.menu.admin.main, method: addAdminMenuItems }
+
+    app.form.extension.type.product:
+        class: App\Form\Extension\ProductTypeExtension
+        tags:
+            - { name: form.type_extension, extended_type: Sylius\Bundle\ProductBundle\Form\Type\ProductType }
+
+    #app.form.extension.type.brand:
+    #    class: App\Form\Extension\BrandTypeExtension
+    #    tags:
+    #        - { name: form.type_extension, extended_type: App\Form\Type\BrandType }

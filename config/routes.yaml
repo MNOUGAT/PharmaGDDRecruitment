@@ -25,4 +25,3 @@ app_admin_brand_products:
                 method: findProductsbyBrand
                 arguments:
                    - "expr:service('sylius.context.brand').getBrand()"
-

@@ -5,3 +5,4 @@ sylius_resource:
             classes:
                 model: App\Entity\Brand
                 repository: App\Repository\BrandRepository 
+                form: App\Form\Type\BrandType
